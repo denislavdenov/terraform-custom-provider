@@ -1,2 +1,4 @@
 .terraform/
 .vagrant/
+.DS_Store
+terraform.tfstate*
