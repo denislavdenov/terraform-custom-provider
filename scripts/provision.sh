@@ -39,6 +39,12 @@ which terraform &>/dev/null || {
 }
 
 # install git
-which git &>/dev/null || {
+which git vim&>/dev/null || {
   apt-get install -y git
 }
+
+# install ruby
+
+sudo apt install ruby -y
+sudo apt-get install ruby-dev -y
+sudo gem install bundler
