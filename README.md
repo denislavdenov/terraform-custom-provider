@@ -1,5 +1,10 @@
 ## Terraform custom plugin
 
+## V0.0.1
+Code for compiling a custom plugin and using it in terraform.
+## V0.0.2
+Adds code for testing the output of already created plugin
+
 **The idea of this repo is to run locally a custom plugin.**
 
 We are going to use this custom plugin:
@@ -55,3 +60,17 @@ output "external_ip" {
 11. It is time to test if you are going to get your external IP as an output:
 `terraform init`
 `terraform apply`
+
+### Testing part
+
+Code in V0.0.2 which adds testing, changes the provisioning script to install Ruby, ruby-dev and Bundler gem
+
+When you have already done the 11 steps above you need to do the following in order to test your output:
+```
+vagrant ssh
+cd /vagrant
+bundle install
+bundle exec kitchen test
+```
+
+Test is located in test/integration/default/control folder and you can edit and try something different.
