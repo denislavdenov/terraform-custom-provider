@@ -1,8 +1,8 @@
 ## Terraform custom plugin
 
-## V0.0.1
+#### V0.0.1
 Code for compiling a custom plugin and using it in terraform.
-## V0.0.2
+#### V0.0.2
 Adds code for testing the output of already created plugin
 
 **The idea of this repo is to run locally a custom plugin.**
